@@ -1,0 +1,7 @@
+*.iml
+*.swp
+*.idea
+target
+src/main/java/challenges/flow/UserAgent.java
+src/main/java/challenges/flow/EmailAdapter.java
+src/main/java/challenges/flow/EmailEvent.java

@@ -5,7 +5,7 @@ import flow.AgentException;
 import flow.IAction;
 import flow.IAgent;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class UserAgent implements IAgent, IAction<String> {
@@ -21,8 +21,7 @@ public class UserAgent implements IAgent, IAction<String> {
 
     @Override
     public List<IAction> act() throws AgentException {
-        List<IAction> lstUser = new ArrayList<IAction>();
-        lstUser.add(new UserAgent("hello"));
+        List<IAction> lstUser = Arrays.asList((IAction) new UserAgent("hello"));
         return lstUser;
     }
 
